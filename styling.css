@@ -15,22 +15,25 @@ header {
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: flex-end;
+    
+    padding-bottom : 5px;
 }
 
 header h1 {
-    
-    margin: 19px;
-    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 5px;
+    min-height: 37px;
 }
 
 header button {
     display: flex;
     justify-content: center;
     align-self: center;
-    padding: 15px;
     width: 45px;
     height: 45px;
-    margin: 15px; 
+    margin: 5px; 
     margin-bottom: 0;
     border-radius: 6px;
     border: 0;
@@ -38,11 +41,18 @@ header button {
     text-decoration: none;
     transition-duration: 0.2s;
     cursor: pointer;
+    background-color: lightgreen;
 }
 
 header button:hover {
     color: rgb(251, 253, 251);
     background-color: rgb(107, 182, 107);
+}
+
+header i {
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 h1 {
@@ -65,11 +75,26 @@ h1 {
     background-color: rgb(107, 182, 107);
 }
 
-.show {
-    display:block;
+.slideInContent {
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 100%;
+    background-color: gray;
+    position: absolute;
+    transition: 0.2s;
 }
 
-.buttonRadius {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.slideInContent i {
+    display:flex;
+    justify-content: flex-end;
+    margin: 22px;
+}
+
+.showSlideIn {
+    left: 0;
+}
+
+.show {
+    display:block;
 }
