@@ -10,24 +10,18 @@ window.onclick = function(event) {
 
 
 
-let images = ["https://picsum.photos/id/1015/" + window.innerWidth + "/300", "https://picsum.photos/id/1016"];
 let imageShown = 0;
 
 function changePicture() {
+  let images = ["https://picsum.photos/id/1015/" + window.innerWidth + "/" + ((window.innerHeight / 2).toFixed()), "https://picsum.photos/id/1018/" + window.innerWidth + "/" + (window.innerHeight * 2 / 3).toFixed(), "https://picsum.photos/id/1016/" + window.innerWidth + "/" + (window.innerHeight * 2 / 3).toFixed()];
 
-  console.log(typeof images[0]);
-  
-  document.getElementById("changingImage").src=images[0];
+  document.getElementById("changingImage").src=images[imageShown];
 
-
-
-  if (imageShown == (images.Length - 1)) {
+  if (imageShown == 2) {
     imageShown = 0;
   } else {
     imageShown++;
   }
-
-  images[imageShown].style.display = "block";
 }
-
 changePicture();
+setInterval(changePicture, 2000);
