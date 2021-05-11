@@ -87,7 +87,7 @@ header i {
   width: 300px;
   height: 100%;
   background-color: rgb(89, 192, 89);
-  position: absolute;
+  position: fixed;
   transition: 0.2s;
 }
 
@@ -118,11 +118,9 @@ header i {
   left: 0;
 }
 
-
-
 #changingImage {
-  width: 100vw;
-  height: 50vh;
+  width: 100%;
+  height: 60vh;
 }
 
 main .wideLine {
@@ -133,7 +131,8 @@ main .wideLine {
 main h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .grid {
@@ -143,6 +142,10 @@ main h1 {
   grid-template-columns: 1fr auto 1fr;
 }
 
+.grid h2 {
+  margin-bottom: 15px;
+}
+
 .grid p {
   margin-bottom: 15px;
 }
@@ -150,3 +153,20 @@ main h1 {
 .grid img {
   width: 100%;
 }
+
+.caption {
+  display: block;
+  margin-left: 80px;
+  margin-top: 60px;
+}
+
+/*
+To do:
+
+Slide in ska vara för hela sidan (check)
+
+fixa andra delsidan, o tredje?
+
+skugga på slideInContent
+
+*/
