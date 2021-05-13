@@ -12,11 +12,6 @@
   --darkgreen: rgb(76, 173, 76);
 }
 
-main {
-  background-color: var(--white);
-  padding-bottom: 0.1px;
-}
-
 a {
   text-decoration: none;
   color: var(--black);
@@ -145,10 +140,21 @@ header i {
   left: 0;
 }
 
-footer {
-  background-color: var(--darkgreen);
+main {
+  background-color: var(--white);
+  padding-bottom: 0.1px;
 }
 
+footer {
+  background-color: var(--lightgreen);
+  padding: 15px;
+  padding-left: 5%;
+  box-shadow: 0 3px 10px black;
+}
+
+footer p {
+  margin-top: 3px;
+}
 
 
 
@@ -184,10 +190,6 @@ main h1 {
   margin-bottom: 15px;
 }
 
-.grid img {
-  width: 100%;
-}
-
 .caption {
   display: block;
   margin-left: 80px;
@@ -212,13 +214,27 @@ article p {
   margin-top: 15px;
 }
 
-/*
-To do:
+article img {
+  width:47%;
+  min-width: 256px;
+  margin-bottom: 20px;
+}
 
-Slide in ska vara för hela sidan (check)
+#clickImage {
+  margin-left: 10%;
+  width: 80%;
+  margin-right:10%;
+}
 
-fixa andra delsidan, o tredje?
+.imageButtons {
+  display: flex;
+  justify-content: center;
+}
 
-skugga på slideInContent (check)
-
-*/
+.imageButtons i {
+  margin: 5px;
+  margin-bottom: 0;
+  margin-top: 2px;
+  color: var(--darkgreen);
+  cursor: pointer;
+}
